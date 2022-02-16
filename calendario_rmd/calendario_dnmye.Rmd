@@ -19,23 +19,28 @@ library(toastui)
 library(shiny)
 
 # Tabla con las fechas
-# agenda <- data.frame(
-#   title = c("Base microdatos EVyTH",
-#             "Informe ETI"),
-#   start = format(Sys.Date(), c("%Y-%m-03 00:00:00", "%Y-%m-04 00:00:00")),
-#   end = format(Sys.Date(), c("%Y-%m-03 00:00:00", "%Y-%m-04 00:00:00"))
-# )
+agenda <- data.frame(
+  title = c(rep("Base microdatos EVyTH", 3),
+            "Encuesta de ocupación hotelera (EOH)", "Reporte MULC"),
+  body  = c("IV trimestre de 2021", "I trimestre de 2022", "II trimestre de 2022",
+            "Diciembre de 2021", "Marzo de 2022"),
+  start = c("2022-04-4", "2022-07-04", "2022-10-03", "2022-02-23", "2022-03-02"),
+  end = c("2022-04-4", "2022-07-04", "2022-10-03", "2022-02-23", "2022-03-02"),
+  category = c("time", "time", "time", "time", "time")
+)
 
 
-calendar(navigation = TRUE, 
-         navOpts = navigation_options(today_label = "Today",
-                                      # prev_label = ?icon("chevron-left"),
-                                      # next_label = icon("chevron-right"),
-                                      class = "bttn-bordered bttn-sm bttn-primary",
-                                      fmt_date = "YYYY-MM-DD",
-                                      sep_date = " ~ ")
-         ) %>%
-    cal_month_options(
+calendar(
+  navigation = TRUE,
+  navOpts = navigation_options(
+    today_label = "Hoy",
+    class = "bttn-stretch bttn-sm bttn-warning",
+    color = "#636363", 
+    fmt_date = format("YYYY/MMMM"),
+    sep_date = "-"
+  )
+) %>%
+  cal_month_options(
     startDayOfWeek = 7,
     daynames = 
       #c("Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"),
@@ -44,42 +49,19 @@ calendar(navigation = TRUE,
     isAlways6Week = F
   ) %>% 
   cal_schedules(
-    title = "Base de microdatos EVyTH",
-    body = "IV trimestre de 2021",
-    start = "2022-04-04",
-    end = "2022-04-04",
-    category = "time"
-  ) %>%
-  cal_schedules(
-    title = "Informe ETI",
-    body = "Enero de 2022",
-    start = format(Sys.Date(), "%Y-%m-05 08:00:00"),
-    end = format(Sys.Date(), "%Y-%m-05 12:00:00"),
-    category = "time"
-  ) %>%
-  cal_schedules(
-    title = "Informe EOH",
-    body = "Enero de 2022",
-    start = format(Sys.Date(), "%Y-%m-12"),
-    end = format(Sys.Date(), "%Y-%m-12"),
-    category = "time"
-  ) %>%
-  cal_schedules(
-    title = "Informe EVyTH",
-    body = "4to trimestre de 2022",
-    start = format(Sys.Date(), "%Y-%m-15 12:00:00"),
-    end = format(Sys.Date(), "%Y-%m-15 14:00:00"),
-    category = "time"
-  ) %>% 
-    cal_theme(
-    common.border = "2px solid #E5E9F0",
-    month.dayname.borderLeft = "2px solid #E5E9F0"
-    # common.backgroundColor = "#2E3440",
-    # common.holiday.color = "#88C0D0",
-    # common.saturday.color = "#88C0D0",
-    # common.dayname.color = "#ECEFF4",
-    # common.today.color = "#333"
-  )
+    agenda
+    )
+
+ 
+  #   cal_theme(
+  #   common.border = "2px solid #E5E9F0",
+  #   month.dayname.borderLeft = "2px solid #E5E9F0"
+  #   # common.backgroundColor = "#2E3440",
+  #   # common.holiday.color = "#88C0D0",
+  #   # common.saturday.color = "#88C0D0",
+  #   # common.dayname.color = "#ECEFF4",
+  #   # common.today.color = "#333"
+  # )
 
 
 
