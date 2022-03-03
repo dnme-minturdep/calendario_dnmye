@@ -1,0 +1,50 @@
+---
+title: "Calendario de la Dirección de Mercados y Estadística - Ministerio de Turismo y Deportes de la Nación"
+author: "DNMyE-MINTURYDEP"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = F, warning = F)
+```
+
+```{r}
+## Instalo paquetes
+# install.packages("toastui")
+
+### Cargo librerías
+library(tidyverse)
+library(toastui)
+library(shiny)
+
+# Tabla con las fechas
+source(here::here("scripts", "importar_calendario.R"))
+```
+
+
+```{r}
+
+calendar(
+  navigation = TRUE,
+  navOpts = navigation_options(
+    today_label = "Hoy",
+    class = "bttn-stretch bttn-sm bttn-warning",
+    color = "#636363", 
+    fmt_date = format("MM/YYYY"),
+    sep_date = "-"
+  )
+) %>%
+  cal_month_options(
+    startDayOfWeek = 7,
+    daynames = 
+      #c("Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"),
+      c("D", "L", "M", "M", "J", "V", "S"),
+    narrowWeekend = TRUE,
+    isAlways6Week = F
+  ) %>% 
+  cal_schedules(
+    calendario
+    )
+
+```
+
