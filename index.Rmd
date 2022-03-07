@@ -1,0 +1,88 @@
+---
+title: "CALENDARIO DE DIFUSIÓN LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"
+subtitle: "Subsecretaría de Desarrollo Estratégico - Ministerio de Turismo y Deportes"
+description: |
+ *
+site: distill::distill_website
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+
+# Learn more about creating websites with Distill at:
+# https://rstudio.github.io/distill/website.html
+
+# Learn more about publishing to GitHub Pages at:
+# https://rstudio.github.io/distill/publish_website.html#github-pages
+
+```
+
+```{r}
+### Cargo librerías
+library(tidyverse)
+library(lubridate)
+library(toastui)
+library(shiny)
+```
+
+
+```{r}
+# library(googlesheets4)
+# 
+# ### Autorización de API
+# gs4_auth(scope = "https://www.googleapis.com/auth/drive")
+# 
+# # Importar sheet de google 
+# calendario <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit#gid=0")
+
+```
+
+
+```{r}
+### Importar calendario fuente
+#calendario <- readxl::read_excel("/srv/DataDNMYE/calendario_publicacion.xlsx")
+calendario <- readxl::read_excel("man/calendario_publicacion.xlsx")
+
+### Limpieza de base
+calendario <- calendario %>% 
+  rename(title    = titulo, 
+         body     = descripcion,
+         category = categoria) %>% 
+  mutate(start = ymd(paste(anio, mes, dia, sep = "-")),
+         end   = start,
+         category = case_when(category == "fecha puntual" ~ "time")) %>% 
+  select(title, body, category, start, end)
+
+```
+
+
+
+
+
+```{r}
+### Armo calendario
+calendar(
+  navigation = TRUE,
+  navOpts = navigation_options(
+    today_label = "Hoy",
+    class = "bttn-stretch bttn-sm bttn-warning",
+    color = "#636363", 
+    fmt_date = format("MM/YYYY"),
+    sep_date = "-"
+  )
+) %>%
+  cal_month_options(
+    startDayOfWeek = 7,
+    daynames = 
+      #c("Dom", "Lun", "Mar", "Mie", "Jue", "Vie", "Sab"),
+      c("D", "L", "M", "M", "J", "V", "S"),
+    narrowWeekend = TRUE,
+    isAlways6Week = F
+  ) %>% 
+  cal_schedules(
+    calendario
+    )
+
+```
+
+

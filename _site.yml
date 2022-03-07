@@ -1,0 +1,26 @@
+name: "CALENDARIO DIFUSIÓN"
+title: "CALENDARIO"
+favicon: favicon.ico
+description: |
+  Calendario de difusión
+output_dir: "docs"
+navbar:
+  logo:
+    image: logo.png
+    href: https://www.yvera.tur.ar/estadistica/
+  right:
+    - text: "Calendario"
+      href: http://datos.yvera.gob.ar/
+    - text: "Datos Abiertos"
+      href: http://datos.yvera.gob.ar/
+    - text: "Bitácora"
+      href: https://bitacora.yvera.tur.ar/
+    - text: "Informes"
+      href: https://www.yvera.tur.ar/estadistica/informe
+    - text: "Tableros"
+      href: https://tableros.yvera.tur.ar
+    
+output:
+  distill::distill_article:
+    css: styles.css
+
