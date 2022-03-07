@@ -10,7 +10,7 @@ navbar:
     href: https://www.yvera.tur.ar/estadistica/
   right:
     - text: "Calendario"
-      href: http://datos.yvera.gob.ar/
+      href: https://dnme-minturdep.github.io/calendario_dnmye/
     - text: "Datos Abiertos"
       href: http://datos.yvera.gob.ar/
     - text: "Bitácora"

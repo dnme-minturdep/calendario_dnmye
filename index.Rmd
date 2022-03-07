@@ -1,5 +1,5 @@
 ---
-title: "CALENDARIO DE DIFUSIÓN LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"
+title: "CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"
 subtitle: "Subsecretaría de Desarrollo Estratégico - Ministerio de Turismo y Deportes"
 description: |
  *
@@ -27,18 +27,6 @@ library(shiny)
 
 
 ```{r}
-# library(googlesheets4)
-# 
-# ### Autorización de API
-# gs4_auth(scope = "https://www.googleapis.com/auth/drive")
-# 
-# # Importar sheet de google 
-# calendario <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit#gid=0")
-
-```
-
-
-```{r}
 ### Importar calendario fuente
 #calendario <- readxl::read_excel("/srv/DataDNMYE/calendario_publicacion.xlsx")
 calendario <- readxl::read_excel("man/calendario_publicacion.xlsx")
@@ -54,9 +42,6 @@ calendario <- calendario %>%
   select(title, body, category, start, end)
 
 ```
-
-
-
 
 
 ```{r}
