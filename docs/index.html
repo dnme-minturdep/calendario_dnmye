@@ -56,7 +56,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }
 code span.al { color: #ad0000; } /* Alert */
 code span.an { color: #5e5e5e; } /* Annotation */
-code span.at { } /* Attribute */
+code span.at { color: #20794d; } /* Attribute */
 code span.bn { color: #ad0000; } /* BaseN */
 code span.bu { } /* BuiltIn */
 code span.cf { color: #007ba5; } /* ControlFlow */
@@ -77,7 +77,7 @@ code span.kw { color: #007ba5; } /* Keyword */
 code span.op { color: #5e5e5e; } /* Operator */
 code span.ot { color: #007ba5; } /* Other */
 code span.pp { color: #ad0000; } /* Preprocessor */
-code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.sc { color: #20794d; } /* SpecialChar */
 code span.ss { color: #20794d; } /* SpecialString */
 code span.st { color: #20794d; } /* String */
 code span.va { color: #111111; } /* Variable */
@@ -85,32 +85,31 @@ code span.vs { color: #20794d; } /* VerbatimString */
 code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
-
   <!--radix_placeholder_meta_tags-->
-  <title>CALENDARIO: CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA</title>
+  <title>CALENDARIO: CALENDARIO DE DIFUSIÓN </title>
 
-  <meta property="description" itemprop="description" content="*"/>
+  <meta property="description" itemprop="description" content="Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ &#39;MINTURDEP&#39;)."/>
 
   <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico"/>
 
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="CALENDARIO: CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"/>
+  <meta property="og:title" content="CALENDARIO: CALENDARIO DE DIFUSIÓN "/>
   <meta property="og:type" content="article"/>
-  <meta property="og:description" content="*"/>
+  <meta property="og:description" content="Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ &#39;MINTURDEP&#39;)."/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="CALENDARIO"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="CALENDARIO: CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"/>
-  <meta property="twitter:description" content="*"/>
+  <meta property="twitter:title" content="CALENDARIO: CALENDARIO DE DIFUSIÓN "/>
+  <meta property="twitter:description" content="Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ &#39;MINTURDEP&#39;)."/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","subtitle","description","site"]}},"value":[{"type":"character","attributes":{},"value":["CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"]},{"type":"character","attributes":{},"value":["Subsecretaría de Desarrollo Estratégico - Ministerio de Turismo y Deportes"]},{"type":"character","attributes":{},"value":["*\n"]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","site"]}},"value":[{"type":"character","attributes":{},"value":["CALENDARIO DE DIFUSIÓN "]},{"type":"character","attributes":{},"value":["Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ 'MINTURDEP')."]},{"type":"character","attributes":{},"value":["distill::distill_website"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -457,7 +456,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
   </style>
 
-  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
@@ -1864,10 +1863,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
       // hoverable references
       $('span.citation[data-cites]').each(function() {
-        var refs = $(this).attr('data-cites').split(" ");
-        var refHtml = refs.map(function(ref) {
-          return "<p>" + $('#ref-' + ref).html() + "</p>";
-        }).join("\n");
+        var refHtml = $('#ref-' + $(this).attr('data-cites')).html();
         window.tippy(this, {
           allowHTML: true,
           content: refHtml,
@@ -2038,11 +2034,11 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </script>
 
   <!--/radix_placeholder_distill-->
-  <script src="site_libs/header-attrs-2.11/header-attrs.js"></script>
-  <script src="site_libs/htmlwidgets-1.5.4/htmlwidgets.js"></script>
+  <script src="site_libs/header-attrs-2.8/header-attrs.js"></script>
+  <script src="site_libs/htmlwidgets-1.5.3/htmlwidgets.js"></script>
   <script src="site_libs/calendar-binding-0.2.1/calendar.js"></script>
-  <link href="site_libs/font-awesome-5.15.3/css/all.min.css" rel="stylesheet" />
-  <link href="site_libs/font-awesome-5.15.3/css/v4-shims.min.css" rel="stylesheet" />
+  <link href="site_libs/font-awesome-5.13.0/css/all.min.css" rel="stylesheet" />
+  <link href="site_libs/font-awesome-5.13.0/css/v4-shims.min.css" rel="stylesheet" />
   <link href="site_libs/bttn-0.2.4/bttn.min.css" rel="stylesheet" />
   <script src="site_libs/popper-2.6.0/popper.min.js"></script>
   <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
@@ -2206,7 +2202,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA","description":"*","authors":[]}
+{"title":"CALENDARIO DE DIFUSIÓN ","description":"Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ 'MINTURDEP').","authors":[]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2234,12 +2230,10 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_site_before_body-->
 
 <div class="d-title">
-<h1>CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA</h1>
+<h1>CALENDARIO DE DIFUSIÓN</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
-<p><ul>
-<li></li>
-</ul></p>
+<p>Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del <a href="http://turismo.gob.ar/" title="MINTURDEP">Ministerio de Turismo y Deportes</a>.</p>
 </div>
 
 
@@ -2251,21 +2245,21 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<div id="htmlwidget-e569a9f29f16277ee583_menu">
-<span id="htmlwidget-e569a9f29f16277ee583_menu_navi">
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-e569a9f29f16277ee583_today">Today</button>
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-e569a9f29f16277ee583_prev">
+<div id="htmlwidget-cd5b5dd4521c14ed33a9_menu">
+<span id="htmlwidget-cd5b5dd4521c14ed33a9_menu_navi">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-cd5b5dd4521c14ed33a9_today">Today</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-cd5b5dd4521c14ed33a9_prev">
 <i class="fa fa-chevron-left"></i>
 </button>
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-e569a9f29f16277ee583_next">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-cd5b5dd4521c14ed33a9_next">
 <i class="fa fa-chevron-right"></i>
 </button>
 </span>
-<span id="htmlwidget-e569a9f29f16277ee583_renderRange" class="render-range"></span>
+<span id="htmlwidget-cd5b5dd4521c14ed33a9_renderRange" class="render-range"></span>
 </div>
 <br/>
-<div id="htmlwidget-e569a9f29f16277ee583" style="width:100%;height:600px;" class="calendar html-widget" width="100%" height="600px"></div>
-<script type="application/json" data-for="htmlwidget-e569a9f29f16277ee583">{"x":{"options":{"defaultView":"month","taskView":false,"scheduleView":true,"useDetailPopup":true,"useCreationPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":7,"daynames":["D","L","M","M","J","V","S"],"narrowWeekend":true,"isAlways6Week":false}},"schedules":[{"category":"time","dueDateClass":"","id":"schedulec3a2850f380abbe04c943d88","calendarId":"1","title":"Encuesta de ocupación hotelera (EOH)","body":"diciembre de 2021","start":"2022-02-23","end":"2022-02-23"},{"category":"time","dueDateClass":"","id":"schedule7abc27ee29ed75dc4e7fcbf9","calendarId":"1","title":"Reporte MULC","body":"mes?","start":"2022-03-02","end":"2022-03-02"},{"category":"time","dueDateClass":"","id":"schedule2292410408e9a3b6548d3d40","calendarId":"1","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTY)","body":"IV trimestre de 2022","start":"2022-04-04","end":"2022-04-04"}],"navigation":true,"events":[],"navigationOptions":{"today_label":"Hoy","prev_label":"<i class=\"fa fa-chevron-left\" role=\"presentation\" aria-label=\"chevron-left icon\"><\/i>","next_label":"<i class=\"fa fa-chevron-right\" role=\"presentation\" aria-label=\"chevron-right icon\"><\/i>","class":" bttn-stretch bttn-sm bttn-warning","color":"#636363","fmt_date":"MM/YYYY","sep_date":"-"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-cd5b5dd4521c14ed33a9" style="width:100%;height:600px;" class="calendar html-widget" width="100%" height="600px"></div>
+<script type="application/json" data-for="htmlwidget-cd5b5dd4521c14ed33a9">{"x":{"options":{"defaultView":"month","taskView":false,"scheduleView":true,"useDetailPopup":true,"useCreationPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":7,"daynames":["D","L","M","M","J","V","S"],"narrowWeekend":true,"isAlways6Week":false},"calendars":[{"id":123,"color":"#37BBED","bgColor":"white","borderColor":"#EE3D8F"}]},"schedules":[{"category":"allday","dueDateClass":"","id":"schedule2f3c9bf4d79b3bc050352823","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Diciembre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/621684925e880402249321.pdf\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📊 Datos Abiertos><\/a><\/li>","start":"2022-02-23","end":"2022-02-23"},{"category":"allday","dueDateClass":"","id":"schedule4bbad4491c9165b0367c5df1","calendarId":"123","title":"Reporte MULC - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">🔗 Informe<\/a><\/li>","start":"2022-03-02","end":"2022-03-02"},{"category":"allday","dueDateClass":"","id":"schedule6dc5f6347bf59b0f1dc50d6a","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📊 Datos Abiertos<\/a> <\/li>","start":"2022-03-09","end":"2022-03-09"},{"category":"allday","dueDateClass":"","id":"schedule68b160fb979b39b00a252aab","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - IV trimestre de 2021","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">🛠️ Datos Abiertos<\/a> <\/li>","start":"2022-04-04","end":"2022-04-04"},{"category":"allday","dueDateClass":"","id":"schedule1fc7c87271466363a86baddd","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - I trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">🛠️ Datos Abiertos<\/a> <\/li>","start":"2022-07-04","end":"2022-07-04"},{"category":"allday","dueDateClass":"","id":"schedule677b36a673bd1708d96f3e35","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - II trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">🛠️ Datos Abiertos<\/a> <\/li>","start":"2022-10-03","end":"2022-10-03"},{"category":"allday","dueDateClass":"","id":"schedulebdfe3401b6c51f192fd814a7","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">🛠️ Datos Abiertos<\/a> <\/li>","start":"2023-02-01","end":"2023-02-01"}],"navigation":true,"events":[],"navigationOptions":{"today_label":"Hoy","prev_label":"<i class=\"fa fa-chevron-left\" role=\"presentation\" aria-label=\"chevron-left icon\"><\/i>","next_label":"<i class=\"fa fa-chevron-right\" role=\"presentation\" aria-label=\"chevron-right icon\"><\/i>","class":" bttn-stretch bttn-sm bttn-warning","color":"#50535C","fmt_date":"MM/YYYY","sep_date":"-"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->

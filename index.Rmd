@@ -1,20 +1,11 @@
 ---
-title: "CALENDARIO DE DIFUSIÓN DE LA DIRECCIÓN NACIONAL DE MERCADOS Y ESTADÍSTICA"
-subtitle: "Subsecretaría de Desarrollo Estratégico - Ministerio de Turismo y Deportes"
-description: |
- *
+title: "CALENDARIO DE DIFUSIÓN "
+description: "Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ 'MINTURDEP')."
 site: distill::distill_website
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
-
-# Learn more about creating websites with Distill at:
-# https://rstudio.github.io/distill/website.html
-
-# Learn more about publishing to GitHub Pages at:
-# https://rstudio.github.io/distill/publish_website.html#github-pages
-
 ```
 
 ```{r}
@@ -28,18 +19,22 @@ library(shiny)
 
 ```{r}
 ### Importar calendario fuente
-#calendario <- readxl::read_excel("/srv/DataDNMYE/calendario_publicacion.xlsx")
-calendario <- readxl::read_excel("man/calendario_publicacion.xlsx")
+# Desactivo pedido de acceso
+googlesheets4::gs4_deauth()
+
+# Traigo base de calendario
+calendario <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit?usp=sharing")
+
 
 ### Limpieza de base
 calendario <- calendario %>% 
   rename(title    = titulo, 
-         body     = descripcion,
-         category = categoria) %>% 
-  mutate(start = ymd(paste(anio, mes, dia, sep = "-")),
-         end   = start,
-         category = case_when(category == "fecha puntual" ~ "time")) %>% 
-  select(title, body, category, start, end)
+         body     = descripcion) %>% 
+  mutate(start      = ymd(paste(anio, mes, dia, sep = "-")),
+         end        = start,
+         category   = "allday",
+         calendarId = 123) %>% 
+  select(title, body, category, start, end, calendarId)
 
 ```
 
@@ -51,7 +46,7 @@ calendar(
   navOpts = navigation_options(
     today_label = "Hoy",
     class = "bttn-stretch bttn-sm bttn-warning",
-    color = "#636363", 
+    color = comunicacion::dnmye_colores("gris oscuro"), 
     fmt_date = format("MM/YYYY"),
     sep_date = "-"
   )
@@ -63,10 +58,17 @@ calendar(
       c("D", "L", "M", "M", "J", "V", "S"),
     narrowWeekend = TRUE,
     isAlways6Week = F
-  ) %>% 
+  ) %>%
   cal_schedules(
     calendario
+    ) %>% 
+  cal_props(
+    id = 123,
+    color = comunicacion::dnmye_colores("celeste"),
+    bgColor = "white",
+    borderColor = comunicacion::dnmye_colores("rojo")
     )
+      
 
 ```
 
