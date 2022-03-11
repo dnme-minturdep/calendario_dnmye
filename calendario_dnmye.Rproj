@@ -13,4 +13,3 @@ RnwWeave: Sweave
 LaTeX: pdfLaTeX
 
 BuildType: Website
-WebsitePath: C:/Users/pablo/OneDrive - turismo.gob.ar/Procesos/calendario_dnmye
