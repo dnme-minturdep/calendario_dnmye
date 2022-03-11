@@ -9,8 +9,8 @@ navbar:
     image: logo.png
     href: https://www.yvera.tur.ar/estadistica/
   right:
-    - text: "Calendario"
-      href: https://dnme-minturdep.github.io/calendario_dnmye/
+    - text: "Armonización"
+      href: https://armonizacion.yvera.tur.ar/
     - text: "Datos Abiertos"
       href: http://datos.yvera.gob.ar/
     - text: "Bitácora"
