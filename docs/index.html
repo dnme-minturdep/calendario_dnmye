@@ -460,265 +460,6 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   <link href="site_libs/font-awesome-5.1.0/css/all.css" rel="stylesheet"/>
   <link href="site_libs/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet"/>
   <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
-  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
-  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
-
-  <script type="application/javascript">
-
-  function getMeta(metaName) {
-    var metas = document.getElementsByTagName('meta');
-    for (let i = 0; i < metas.length; i++) {
-      if (metas[i].getAttribute('name') === metaName) {
-        return metas[i].getAttribute('content');
-      }
-    }
-    return '';
-  }
-
-  function offsetURL(url) {
-    var offset = getMeta('distill:offset');
-    return offset ? offset + '/' + url : url;
-  }
-
-  function createFuseIndex() {
-
-    // create fuse index
-    var options = {
-      keys: [
-        { name: 'title', weight: 20 },
-        { name: 'categories', weight: 15 },
-        { name: 'description', weight: 10 },
-        { name: 'contents', weight: 5 },
-      ],
-      ignoreLocation: true,
-      threshold: 0
-    };
-    var fuse = new window.Fuse([], options);
-
-    // fetch the main search.json
-    return fetch(offsetURL('search.json'))
-      .then(function(response) {
-        if (response.status == 200) {
-          return response.json().then(function(json) {
-            // index main articles
-            json.articles.forEach(function(article) {
-              fuse.add(article);
-            });
-            // download collections and index their articles
-            return Promise.all(json.collections.map(function(collection) {
-              return fetch(offsetURL(collection)).then(function(response) {
-                if (response.status === 200) {
-                  return response.json().then(function(articles) {
-                    articles.forEach(function(article) {
-                      fuse.add(article);
-                    });
-                  })
-                } else {
-                  return Promise.reject(
-                    new Error('Unexpected status from search index request: ' +
-                              response.status)
-                  );
-                }
-              });
-            })).then(function() {
-              return fuse;
-            });
-          });
-
-        } else {
-          return Promise.reject(
-            new Error('Unexpected status from search index request: ' +
-                        response.status)
-          );
-        }
-      });
-  }
-
-  window.document.addEventListener("DOMContentLoaded", function (event) {
-
-    // get search element (bail if we don't have one)
-    var searchEl = window.document.getElementById('distill-search');
-    if (!searchEl)
-      return;
-
-    createFuseIndex()
-      .then(function(fuse) {
-
-        // make search box visible
-        searchEl.classList.remove('hidden');
-
-        // initialize autocomplete
-        var options = {
-          autoselect: true,
-          hint: false,
-          minLength: 2,
-        };
-        window.autocomplete(searchEl, options, [{
-          source: function(query, callback) {
-            const searchOptions = {
-              isCaseSensitive: false,
-              shouldSort: true,
-              minMatchCharLength: 2,
-              limit: 10,
-            };
-            var results = fuse.search(query, searchOptions);
-            callback(results
-              .map(function(result) { return result.item; })
-            );
-          },
-          templates: {
-            suggestion: function(suggestion) {
-              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
-                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
-                : '';
-              var html = `
-                <div class="search-item">
-                  <h3>${suggestion.title}</h3>
-                  <div class="search-item-description">
-                    ${suggestion.description || ''}
-                  </div>
-                  <div class="search-item-preview">
-                    ${img}
-                  </div>
-                </div>
-              `;
-              return html;
-            }
-          }
-        }]).on('autocomplete:selected', function(event, suggestion) {
-          window.location.href = offsetURL(suggestion.path);
-        });
-        // remove inline display style on autocompleter (we want to
-        // manage responsive display via css)
-        $('.algolia-autocomplete').css("display", "");
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
-
-  });
-
-  </script>
-
-  <style type="text/css">
-
-  .nav-search {
-    font-size: x-small;
-  }
-
-  /* Algolioa Autocomplete */
-
-  .algolia-autocomplete {
-    display: inline-block;
-    margin-left: 10px;
-    vertical-align: sub;
-    background-color: white;
-    color: black;
-    padding: 6px;
-    padding-top: 8px;
-    padding-bottom: 0;
-    border-radius: 6px;
-    border: 1px #0F2E3D solid;
-    width: 180px;
-  }
-
-
-  @media screen and (max-width: 768px) {
-    .distill-site-nav .algolia-autocomplete {
-      display: none;
-      visibility: hidden;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete {
-      display: inline-block;
-      visibility: visible;
-    }
-    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
-      margin-left: 0;
-      width: 400px;
-      max-height: 400px;
-    }
-  }
-
-  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
-    width: 90%;
-    outline: none;
-    border: none;
-  }
-
-  .algolia-autocomplete .aa-hint {
-    color: #999;
-  }
-  .algolia-autocomplete .aa-dropdown-menu {
-    width: 550px;
-    max-height: 70vh;
-    overflow-x: visible;
-    overflow-y: scroll;
-    padding: 5px;
-    margin-top: 3px;
-    margin-left: -150px;
-    background-color: #fff;
-    border-radius: 5px;
-    border: 1px solid #999;
-    border-top: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
-    cursor: pointer;
-    padding: 5px 4px;
-    border-bottom: 1px solid #eee;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
-    border-bottom: none;
-    margin-bottom: 2px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
-    overflow: hidden;
-    font-size: 0.8em;
-    line-height: 1.4em;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
-    font-size: 1rem;
-    margin-block-start: 0;
-    margin-block-end: 5px;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
-    display: inline-block;
-    overflow: hidden;
-    height: 2.8em;
-    width: 80%;
-    margin-right: 4%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
-    display: inline-block;
-    width: 15%;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
-    height: 3em;
-    width: auto;
-    display: none;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
-    display: initial;
-  }
-
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
-    background-color: #eee;
-  }
-  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
-    font-weight: bold;
-    font-style: normal;
-  }
-
-  </style>
-
-
   <!--/radix_placeholder_navigation_in_header-->
   <!--radix_placeholder_distill-->
 
@@ -2210,8 +1951,8 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <header class="header header--fixed" role="banner">
 <nav class="distill-site-nav distill-site-header">
 <div class="nav-left">
-<a class="logo" href="https://www.yvera.tur.ar/estadistica/">
-<img src="logo.png" alt="Logo"/>
+<a class="logo" href="https://www.yvera.tur.ar/sinta/">
+<img src="sinta.png" alt="Logo"/>
 </a>
 <a href="index.html" class="title">CALENDARIO</a>
 </div>
@@ -2255,21 +1996,21 @@ SINTA
 
 </div>
 <div class="layout-chunk" data-layout="l-body">
-<div id="htmlwidget-a5567b63317b7943e6c8_menu">
-<span id="htmlwidget-a5567b63317b7943e6c8_menu_navi">
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-a5567b63317b7943e6c8_today">Today</button>
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-a5567b63317b7943e6c8_prev">
+<div id="htmlwidget-143f7603979755c24798_menu">
+<span id="htmlwidget-143f7603979755c24798_menu_navi">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-143f7603979755c24798_today">Today</button>
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-143f7603979755c24798_prev">
 <i class="fa fa-chevron-left"></i>
 </button>
-<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-a5567b63317b7943e6c8_next">
+<button type="button" class="btn bttn-no-outline action-button" id="htmlwidget-143f7603979755c24798_next">
 <i class="fa fa-chevron-right"></i>
 </button>
 </span>
-<span id="htmlwidget-a5567b63317b7943e6c8_renderRange" class="render-range"></span>
+<span id="htmlwidget-143f7603979755c24798_renderRange" class="render-range"></span>
 </div>
 <br/>
-<div id="htmlwidget-a5567b63317b7943e6c8" style="width:100%;height:600px;" class="calendar html-widget" width="100%" height="600px"></div>
-<script type="application/json" data-for="htmlwidget-a5567b63317b7943e6c8">{"x":{"options":{"defaultView":"month","taskView":false,"scheduleView":true,"useDetailPopup":true,"useCreationPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":7,"daynames":["D","L","M","M","J","V","S"],"narrowWeekend":true,"isAlways6Week":false},"calendars":[{"id":123,"color":"#37BBED","bgColor":"white","borderColor":"#EE3D8F"}]},"schedules":[{"category":"allday","dueDateClass":"","id":"schedulefa24ab20edf8a0cbe6795e5b","calendarId":"123","title":"Encuesta de Ocupación Hotelera (EOH) - Noviembre 2021","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61e8604b64f75491116042.pdf\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-01-19","end":"2022-01-19"},{"category":"allday","dueDateClass":"","id":"schedule2db03bae20246898aec46c66","calendarId":"123","title":"Cuenta satélite de turismo de la Argentina. Años 2004 y 2016-2019","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61fad7e475abe809073943.pdf\">🔗 Informe<\/a><\/li>","start":"2022-02-02","end":"2022-02-02"},{"category":"allday","dueDateClass":"","id":"scheduleeaef9bd3cd37909fbbfd16d7","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Diciembre de 2021","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-02-10","end":"2022-02-10"},{"category":"allday","dueDateClass":"","id":"schedulee5e46fbeec64263c0d67917b","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Diciembre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/621684925e880402249321.pdf\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-02-23","end":"2022-02-23"},{"category":"allday","dueDateClass":"","id":"schedule395a189668303e75919afe8e","calendarId":"123","title":"Reporte MULC - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-03-02","end":"2022-03-02"},{"category":"allday","dueDateClass":"","id":"schedule6d138902055483a2e1d4535b","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-03-09","end":"2022-03-09"},{"category":"allday","dueDateClass":"","id":"scheduledc809da62dc6c774cb446b5b","calendarId":"123","title":"Informe de visitas en Parques Nacionales - Octubre 2021","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/620adec0cdba2295888077.pdf\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/parques_nacionales.html\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset/parques-nacionales\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-03-11","end":"2022-03-11"},{"category":"allday","dueDateClass":"","id":"schedulea4bfa8a7ce4f68854905ba52","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Enero de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-03-21","end":"2022-03-21"},{"category":"allday","dueDateClass":"","id":"schedule5451301d6949da6d02199160","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - IV trimestre de 2021","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-04-04","end":"2022-04-04"},{"category":"allday","dueDateClass":"","id":"schedule191368654276650914d88cb7","calendarId":"123","title":"Reporte MULC - Febrero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-04-05","end":"2022-04-05"},{"category":"allday","dueDateClass":"","id":"schedule02c9e8a4f2a8656f01252607","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Febrero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-04-12","end":"2022-04-12"},{"category":"allday","dueDateClass":"","id":"schedule8c4afbdc31eaf6b87a753f3a","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Febrero de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-04-26","end":"2022-04-26"},{"category":"allday","dueDateClass":"","id":"schedule2dd06d6be1893bb1dfb0dfc2","calendarId":"123","title":"Reporte MULC - Marzo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-05-03","end":"2022-05-03"},{"category":"allday","dueDateClass":"","id":"schedule7c50938cf7c8588717eaaf29","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Marzo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-05-10","end":"2022-05-10"},{"category":"allday","dueDateClass":"","id":"schedule230e79164ac144b2ce80c0c1","calendarId":"123","title":"Censo Nacional 2022","body":"https://www.censo.gob.ar/","start":"2022-05-18","end":"2022-05-18"},{"category":"allday","dueDateClass":"","id":"schedulec3a4a6553b4b2a87cbc82e5a","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Marzo de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-05-26","end":"2022-05-26"},{"category":"allday","dueDateClass":"","id":"schedule35ac91313a4189ee9f81c879","calendarId":"123","title":"Reporte MULC - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-06-02","end":"2022-06-02"},{"category":"allday","dueDateClass":"","id":"schedule249f170c19a9954d45c477be","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-06-08","end":"2022-06-08"},{"category":"allday","dueDateClass":"","id":"schedulea5bea43f6eab9ca78004b7d7","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Abril de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-06-23","end":"2022-06-23"},{"category":"allday","dueDateClass":"","id":"schedulec0b7e335b273732cca377b6c","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - I trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-07-04","end":"2022-07-04"},{"category":"allday","dueDateClass":"","id":"scheduled7c371e0eb867cb7c9216828","calendarId":"123","title":"Reporte MULC - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-07-04","end":"2022-07-04"},{"category":"allday","dueDateClass":"","id":"schedule1d4cafbbd9cebc45d3e63b57","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Mayo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-07-12","end":"2022-07-12"},{"category":"allday","dueDateClass":"","id":"schedule5290a9dba02d7ae3e91b3f89","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Mayo de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-07-21","end":"2022-07-21"},{"category":"allday","dueDateClass":"","id":"schedule8636048269c9b09b853eb7e5","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Junio de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-08-16","end":"2022-08-16"},{"category":"allday","dueDateClass":"","id":"schedule841e66ddc94c49ced16e4cd9","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Junio de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-08-25","end":"2022-08-25"},{"category":"allday","dueDateClass":"","id":"schedule59fda1cea63a4ac32abc94c6","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Julio de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-09-08","end":"2022-09-08"},{"category":"allday","dueDateClass":"","id":"schedule8f0595e130ef590d99703a85","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Julio de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-09-20","end":"2022-09-20"},{"category":"allday","dueDateClass":"","id":"schedule0457a9e27ca9dfb95a296a7b","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - II trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-10-03","end":"2022-10-03"},{"category":"allday","dueDateClass":"","id":"scheduleea7c08be2a2210fed8c0a57f","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Agosto de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-10-12","end":"2022-10-12"},{"category":"allday","dueDateClass":"","id":"schedulebfa2fea3a900b4b71bd20343","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Agosto de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-10-24","end":"2022-10-24"},{"category":"allday","dueDateClass":"","id":"schedule9681ebeea1640072b683e142","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Septiembre de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-11-10","end":"2022-11-10"},{"category":"allday","dueDateClass":"","id":"scheduleab94a0078be6695421f9eebe","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Septiembre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-11-23","end":"2022-11-23"},{"category":"allday","dueDateClass":"","id":"schedule09824ccbf75dee55cf3ab394","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Octubre de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-12-14","end":"2022-12-14"},{"category":"allday","dueDateClass":"","id":"schedulec4581d1e3765696cd71e0d15","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Octubre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-12-21","end":"2022-12-21"},{"category":"allday","dueDateClass":"","id":"schedule32287e9107d5b7928764cc66","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2023-02-01","end":"2023-02-01"}],"navigation":true,"events":[],"navigationOptions":{"today_label":"Hoy","prev_label":"<i class=\"fa fa-chevron-left\" role=\"presentation\" aria-label=\"chevron-left icon\"><\/i>","next_label":"<i class=\"fa fa-chevron-right\" role=\"presentation\" aria-label=\"chevron-right icon\"><\/i>","class":" bttn-stretch bttn-sm bttn-warning","color":"#50535C","fmt_date":"MM/YYYY","sep_date":"-"}},"evals":[],"jsHooks":[]}</script>
+<div id="htmlwidget-143f7603979755c24798" style="width:100%;height:600px;" class="calendar html-widget" width="100%" height="600px"></div>
+<script type="application/json" data-for="htmlwidget-143f7603979755c24798">{"x":{"options":{"defaultView":"month","taskView":false,"scheduleView":true,"useDetailPopup":true,"useCreationPopup":false,"isReadOnly":true,"usageStatistics":false,"month":{"startDayOfWeek":7,"daynames":["D","L","M","M","J","V","S"],"narrowWeekend":true,"isAlways6Week":false},"calendars":[{"id":123,"color":"#37BBED","bgColor":"white","borderColor":"#EE3D8F"}]},"schedules":[{"category":"allday","dueDateClass":"","id":"scheduled055e94bcfdecc14c01e6788","calendarId":"123","title":"Encuesta de Ocupación Hotelera (EOH) - Noviembre 2021","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61e8604b64f75491116042.pdf\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-01-19","end":"2022-01-19"},{"category":"allday","dueDateClass":"","id":"schedule1cc74e592dfc83946eef620d","calendarId":"123","title":"Cuenta satélite de turismo de la Argentina. Años 2004 y 2016-2019","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61fad7e475abe809073943.pdf\">🔗 Informe<\/a><\/li>","start":"2022-02-02","end":"2022-02-02"},{"category":"allday","dueDateClass":"","id":"schedulef0e66066d558fc9fc02c0700","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Diciembre de 2021","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-02-10","end":"2022-02-10"},{"category":"allday","dueDateClass":"","id":"schedule1370501895138e584f056fcd","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Diciembre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/621684925e880402249321.pdf\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-02-23","end":"2022-02-23"},{"category":"allday","dueDateClass":"","id":"schedule8415c84067c2a1542c8da692","calendarId":"123","title":"Reporte MULC - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-03-02","end":"2022-03-02"},{"category":"allday","dueDateClass":"","id":"schedule4248318091a66600e2bf2f43","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Enero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-03-09","end":"2022-03-09"},{"category":"allday","dueDateClass":"","id":"schedule234854a9eeccd2ead1ca0c67","calendarId":"123","title":"Informe de visitas en Parques Nacionales - Octubre 2021","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/620adec0cdba2295888077.pdf\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/parques_nacionales.html\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset/parques-nacionales\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-03-11","end":"2022-03-11"},{"category":"allday","dueDateClass":"","id":"schedule00577b2033ad380d78089dd8","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Enero de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-03-21","end":"2022-03-21"},{"category":"allday","dueDateClass":"","id":"schedulefa4f6e4a1accba64c6526da3","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - IV trimestre de 2021","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-04-04","end":"2022-04-04"},{"category":"allday","dueDateClass":"","id":"schedule17747d848fd4a7b7d4a622c2","calendarId":"123","title":"Reporte MULC - Febrero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-04-05","end":"2022-04-05"},{"category":"allday","dueDateClass":"","id":"schedule6a3accbf4652656091edbaed","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Febrero de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-04-12","end":"2022-04-12"},{"category":"allday","dueDateClass":"","id":"schedule9c9ca9a0440a8574fef1e5cd","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Febrero de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-04-26","end":"2022-04-26"},{"category":"allday","dueDateClass":"","id":"scheduleaa2a7869ac2373b1533cd14c","calendarId":"123","title":"Reporte MULC - Marzo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-05-03","end":"2022-05-03"},{"category":"allday","dueDateClass":"","id":"schedule524b90faf9df688335646d58","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Marzo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-05-10","end":"2022-05-10"},{"category":"allday","dueDateClass":"","id":"schedule7f22b32781c47f42703a37b2","calendarId":"123","title":"Censo Nacional 2022","body":"https://www.censo.gob.ar/","start":"2022-05-18","end":"2022-05-18"},{"category":"allday","dueDateClass":"","id":"schedule6bad1765bf245b9accb36b2f","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Marzo de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-05-26","end":"2022-05-26"},{"category":"allday","dueDateClass":"","id":"schedulea1d6c1df191d70d1a9b9f23a","calendarId":"123","title":"Reporte MULC - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-06-02","end":"2022-06-02"},{"category":"allday","dueDateClass":"","id":"schedule794cc9853c4c7f7670b55483","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-06-08","end":"2022-06-08"},{"category":"allday","dueDateClass":"","id":"scheduledd652a7602956e0460cc9679","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Abril de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-06-23","end":"2022-06-23"},{"category":"allday","dueDateClass":"","id":"scheduleac477d9626b8ae114a2039fb","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - I trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-07-04","end":"2022-07-04"},{"category":"allday","dueDateClass":"","id":"schedulef52f4dc0eeb0d9eb0b968e91","calendarId":"123","title":"Reporte MULC - Abril de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/mulc.html\">💻 Reporte<\/a><\/li>","start":"2022-07-04","end":"2022-07-04"},{"category":"allday","dueDateClass":"","id":"schedule2dd8b7651460f2c08d48bc8c","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Mayo de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-07-12","end":"2022-07-12"},{"category":"allday","dueDateClass":"","id":"schedulef3a51599ffbf2ff356844eeb","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Mayo de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-07-21","end":"2022-07-21"},{"category":"allday","dueDateClass":"","id":"scheduleff127911ba8f9851860b1972","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Junio de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-08-16","end":"2022-08-16"},{"category":"allday","dueDateClass":"","id":"schedule4bddd400d89677e6103e7029","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Junio de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-08-25","end":"2022-08-25"},{"category":"allday","dueDateClass":"","id":"schedule409e49830f33ab06b0494551","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Julio de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-09-08","end":"2022-09-08"},{"category":"allday","dueDateClass":"","id":"schedule9c9000d42927cc9204f2936e","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Julio de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-09-20","end":"2022-09-20"},{"category":"allday","dueDateClass":"","id":"schedule3ae6572398d6439a5d9a3f24","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - II trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2022-10-03","end":"2022-10-03"},{"category":"allday","dueDateClass":"","id":"schedule81ba376e7050e3b95d93cee5","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Agosto de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-10-12","end":"2022-10-12"},{"category":"allday","dueDateClass":"","id":"scheduleed1c065410a4080580a5a96c","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Agosto de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-10-24","end":"2022-10-24"},{"category":"allday","dueDateClass":"","id":"schedule93be7efcde32f4d5ac68c5f5","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Septiembre de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-11-10","end":"2022-11-10"},{"category":"allday","dueDateClass":"","id":"schedule97a800c1ba8f4c41ee754e17","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Septiembre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-11-23","end":"2022-11-23"},{"category":"allday","dueDateClass":"","id":"schedule889dc19f758d7e005e9767d5","calendarId":"123","title":"Estadísticas de turismo internacional (ETI) - Octubre de 2022","body":"<li><a href=\"https://tableros.yvera.tur.ar/internacional.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/turismo_internacional/\">👨🏻‍💻 Tablero<\/a> <\/li>\n<li><a href=\"http://datos.yvera.gob.ar/dataset?groups=turismo-internacional\">📖 Datos Abiertos<\/a> <\/li>","start":"2022-12-14","end":"2022-12-14"},{"category":"allday","dueDateClass":"","id":"schedulea59f00374cf556eb8d227329","calendarId":"123","title":"Encuesta de ocupación hotelera (EOH) - Octubre de 2022","body":"<li><a href=\"https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh\">🔗 Informe<\/a><\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/eoh.html\">💻 Reporte<\/a><\/li>\n<li><a href=\"https://datos.yvera.gob.ar/dataset?groups=sector-hotelero\">📖 Datos Abiertos><\/a><\/li>","start":"2022-12-21","end":"2022-12-21"},{"category":"allday","dueDateClass":"","id":"schedule8a9903a11218fa220b341cdb","calendarId":"123","title":"Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2022","body":"<li><a href=\"https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos\">📖 Datos Abiertos<\/a> <\/li>\n<li><a href=\"https://tableros.yvera.tur.ar/interno.html\">💻 Reportes<\/a> <\/li>","start":"2023-02-01","end":"2023-02-01"}],"navigation":true,"events":[],"navigationOptions":{"today_label":"Hoy","prev_label":"<i class=\"fa fa-chevron-left\" role=\"presentation\" aria-label=\"chevron-left icon\"><\/i>","next_label":"<i class=\"fa fa-chevron-right\" role=\"presentation\" aria-label=\"chevron-right icon\"><\/i>","class":" bttn-stretch bttn-sm bttn-warning","color":"#50535C","fmt_date":"MM/YYYY","sep_date":"-"}},"evals":[],"jsHooks":[]}</script>
 </div>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
@@ -2287,7 +2028,7 @@ SINTA
 <!--/radix_placeholder_appendices-->
 <!--radix_placeholder_navigation_after_body-->
 <div class="distill-site-nav distill-site-footer">
-<p>Dirección Nacional de Mercados y Estadística | Subsecretaría de Desarrollo Estratégico | Ministerio de Turismo y Deportes de la Nación (2022)</p>
+<p>Dirección Nacional de Mercados y Estadísticas | Subsecretaría de Desarrollo Estratégico | Ministerio de Turismo y Deportes de la Nación (<script>document.write(new Date().getFullYear())</script>)</p>
 </div>
 <!--/radix_placeholder_navigation_after_body-->
 
