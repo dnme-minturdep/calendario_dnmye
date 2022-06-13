@@ -14,6 +14,7 @@ library(tidyverse)
 library(lubridate)
 library(toastui)
 library(shiny)
+library(comunicacion)
 ```
 
 
@@ -46,7 +47,7 @@ calendar(
   navOpts = navigation_options(
     today_label = "Hoy",
     class = "bttn-stretch bttn-sm bttn-warning",
-    color = comunicacion::dnmye_colores("gris oscuro"), 
+    color = dnmye_colores("gris oscuro"), 
     fmt_date = format("MM/YYYY"),
     sep_date = "-"
   )
@@ -64,9 +65,9 @@ calendar(
     ) %>% 
   cal_props(
     id = 123,
-    color = comunicacion::dnmye_colores("celeste"),
+    color = comunicacion::dnmye_colores("cian"),
     bgColor = "white",
-    borderColor = comunicacion::dnmye_colores("rojo")
+    borderColor = comunicacion::dnmye_colores("rosa")
     )
       
 
