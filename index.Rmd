@@ -24,11 +24,11 @@ library(comunicacion)
 googlesheets4::gs4_deauth()
 
 # Traigo base de calendario
-calendario <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit?usp=sharing")
+base <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit?usp=sharing")
 
 
 ### Limpieza de base
-calendario <- calendario %>% 
+calendario <- base %>% 
   rename(title    = titulo, 
          body     = descripcion) %>% 
   mutate(start      = ymd(paste(anio, mes, dia, sep = "-")),
@@ -38,6 +38,18 @@ calendario <- calendario %>%
   select(title, body, category, start, end, calendarId)
 
 ```
+
+
+```{r, echo = FALSE}
+publicados <- base %>% filter(if_any(.cos = everything(), 
+                       .fns = ~ !is.na(.))) %>% 
+  nrow() %>% 
+  as_tibble()
+
+write_csv(x = publicados, ".github/data/n_published.csv")
+
+```
+
 
 
 ```{r}
@@ -61,7 +73,7 @@ calendar(
     isAlways6Week = F
   ) %>%
   cal_schedules(
-    calendario
+    publicados
     ) %>% 
   cal_props(
     id = 123,
