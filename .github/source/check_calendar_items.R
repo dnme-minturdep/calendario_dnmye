@@ -21,8 +21,6 @@ calendario_drive <- googlesheets4::read_sheet("https://docs.google.com/spreadshe
 calendario <- read.csv("https://raw.githubusercontent.com/dnme-minturdep/calendario_dnmye/main/.github/data/n_published.csv") %>% 
   pull()
 
-print(Sys.getenv("RSTUDIO_PANDOC"))
-
 if(calendario_drive > calendario){
   
   rmarkdown::render(input = "index.Rmd", output_yaml = "_site.yml")
