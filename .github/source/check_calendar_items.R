@@ -21,7 +21,7 @@ calendario_drive <- googlesheets4::read_sheet("https://docs.google.com/spreadshe
 calendario <- read.csv("https://raw.githubusercontent.com/dnme-minturdep/calendario_dnmye/main/.github/data/n_published.csv") %>% 
   pull()
 
-Sys.setenv(RSTUDIO_PANDOC=Sys.getenv("RSTUDIO_PANDOC"))
+print(Sys.getenv("RSTUDIO_PANDOC"))
 
 if(calendario_drive > calendario){
   
