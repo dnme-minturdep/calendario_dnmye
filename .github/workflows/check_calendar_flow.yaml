@@ -1,7 +1,7 @@
-#on:
-#  schedule:
-#    - cron:  "0 21 * * 0-6"
-#  workflow_dispatch:
+on:
+ schedule:
+   - cron:  "0 21 * * 0-6"
+ workflow_dispatch:
 
 name: check_calendar_flow
 
@@ -18,7 +18,7 @@ jobs:
           
       - name: Execute calendar check updates and deploy
         run: |
-          Rscript "check_calendar.R"
+          Rscript ".github/source/check_calendar_items.R"
           
       - name: Commit results
         run: |
