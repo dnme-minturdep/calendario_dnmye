@@ -21,8 +21,15 @@ jobs:
       - name: Install distill
         run: Rscript -e 'install.packages("distill")'
         
-      - name: Render rmd
-        run: Rscript -e 'rmarkdown::render(input = "index.Rmd", output_yaml = "_site.yml")'
+      - name: Install dplyr
+        run: Rscript -e 'install.packages("dplyr")'
+        
+      - name: Install googlesheets4
+        run: Rscript -e 'install.packages("googlesheets4")'
+        
+      - name: Correr script calendar
+        run: |
+          Rscript ".github/source/check_calendar_items.R"
           
       - name: Commit results
         run: |
