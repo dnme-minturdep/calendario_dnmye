@@ -17,12 +17,6 @@ jobs:
         with:
           use-public-rspm: true
           
-      - name: Install dependencies
-        run: |
-          install.packages("googlesheets4")
-          install.packages("dplyr")
-          install.packages("rmarkdown") 
-          
       - name: Execute calendar check updates and deploy
         run: |
           Rscript ".github/source/check_calendar_items.R"
