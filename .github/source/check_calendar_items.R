@@ -1,7 +1,7 @@
 
-install.packages("dplyr")
-install.packages("rmarkdown")
-devtools::install_github("tidyverse/googlesheets4")
+#install.packages("dplyr")
+#install.packages("rmarkdown")
+#devtools::install_github("tidyverse/googlesheets4")
 
 library(dplyr)
 
