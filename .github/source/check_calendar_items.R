@@ -1,7 +1,7 @@
 install.packages("googlesheets4")
 install.packages("dplyr")
 install.packages("stringr")
-install.packages("rmarkdwon")
+install.packages("rmarkdown")
 
 library(googlesheets4)
 library(stringr)
