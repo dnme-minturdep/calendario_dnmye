@@ -1,4 +1,8 @@
-install.packages("googlesheets4", dependencies = T)
+install.packages("curl")
+install.packages("gargle")
+install.packages("googledrive")
+install.packages("httr")
+install.packages("googlesheets4")
 install.packages("dplyr")
 install.packages("rmarkdown")
 
