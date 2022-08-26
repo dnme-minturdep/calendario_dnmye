@@ -1,7 +1,7 @@
 install.packages("curl")
+install.packages("httr")
 install.packages("gargle")
 install.packages("googledrive")
-install.packages("httr")
 install.packages("googlesheets4")
 install.packages("dplyr")
 install.packages("rmarkdown")
