@@ -1,12 +1,8 @@
-install.packages("googlesheets4")
+install.packages("googlesheets4", dependencies = T)
 install.packages("dplyr")
-install.packages("stringr")
 install.packages("rmarkdown")
 
-library(googlesheets4)
-library(stringr)
 library(dplyr)
-library(rmarkdown)
 
 
 googlesheets4::gs4_deauth()
