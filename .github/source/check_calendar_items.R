@@ -20,7 +20,7 @@ calendario <- read.csv("https://raw.githubusercontent.com/dnme-minturdep/calenda
 
 if(calendario_drive > calendario){
   
-  rmarkdown::render(input = "index.Rmd", output_yaml = "_site.yml")
+  rmarkdown::render(input = "index.Rmd", output_dir = "docs" , output_yaml = "_site.yml")
 
   } else {
   
