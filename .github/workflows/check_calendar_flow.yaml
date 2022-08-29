@@ -21,9 +21,6 @@ jobs:
       - name: Install distill
         run: Rscript -e 'install.packages("distill")'
         
-      - name: Install dplyr
-        run: Rscript -e 'install.packages("dplyr")'
-        
       - name: Install googlesheets4
         run: Rscript -e 'install.packages("googlesheets4")'
       
@@ -38,9 +35,6 @@ jobs:
         
       - name: Install toastui
         run: Rscript -e 'install.packages("toastui")'
-        
-      - name: Install shiny
-        run: Rscript -e 'install.packages("shiny")'
 
       - name: Install comunicacion
         run: Rscript -e 'devtools::install_github("dnme-minturdep/comunicacion")'
