@@ -17,9 +17,9 @@ La actualización del calendario se encuentra automatizada utilizando un flujo d
 
 2. El flujo de GHA revisa diariamente si existen nuevos registros en el calendario.
 
-3. En caso de que existan nuevas publicaciones, se ejecuta el .Rmd que genera el calendario [index](https://github.com/dnme-minturdep/calendario_dnmye/blob/main/index.Rmd).
+3. En caso de que existan nuevas publicaciones, se ejecuta el .Rmd [index](https://github.com/dnme-minturdep/calendario_dnmye/blob/main/index.Rmd) que genera el calendario.
 
-4. El .Rmd actualiza un archivo con la cantidad de publicaciones al día de la fecha (que servirá de insumo para comparar el día siguiente la búsqueda realizda en el punto 2).
+4. El .Rmd actualiza un archivo con la cantidad de publicaciones al día de la fecha (que servirá de insumo para comparar el día siguiente la búsqueda realizada en el punto 2).
 
 5. Se genera index.html en el repositorio.
 
