@@ -10,19 +10,8 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE}
 ### Cargo librerías
-#install.packages("devtools")
-#install.packages("tidyverse")
-#install.packages("lubridate")
-#install.packages("toastui")
-#install.packages("shiny")
-#install.packages("googlesheets4")
-#devtools::install_github("dnme-minturdep/comunicacion")
-
 library(tidyverse)
-library(lubridate)
 library(toastui)
-library(shiny)
-library(comunicacion)
 ```
 
 
@@ -39,7 +28,7 @@ base <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5
 calendario <- base %>% 
   rename(title    = titulo, 
          body     = descripcion) %>% 
-  mutate(start      = ymd(paste(anio, mes, dia, sep = "-")),
+  mutate(start      = as.Date(paste(anio, mes, dia, sep = "-")),
          end        = start,
          category   = "allday",
          calendarId = 123) %>% 
@@ -85,9 +74,9 @@ calendar(
     ) %>% 
   cal_props(
     id = 123,
-    color = comunicacion::dnmye_colores("cian"),
+    color = "#37BBED", #cian
     bgColor = "white",
-    borderColor = comunicacion::dnmye_colores("rosa")
+    borderColor = "#EE3D8F" #rosa
     )
       
 
