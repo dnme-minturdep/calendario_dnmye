@@ -56,7 +56,7 @@ calendar(
   navOpts = navigation_options(
     today_label = "Hoy",
     class = "bttn-stretch bttn-sm bttn-warning",
-    color = dnmye_colores("gris oscuro"), 
+    color = "#50535C", 
     fmt_date = format("MM/YYYY"),
     sep_date = "-"
   )
