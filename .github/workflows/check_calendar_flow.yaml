@@ -1,6 +1,6 @@
 on:
  schedule:
-   - cron:  "0 21 * * 0-6"
+   - cron:  "0 19 * * 0-6"
  workflow_dispatch:
 
 name: check_calendar_flow
