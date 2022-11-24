@@ -1,7 +1,3 @@
-install.packages("dplyr")
-install.packages("rmarkdown")
-install.packages("googlesheets4")
-
 library(dplyr)
 
 googlesheets4::gs4_deauth()
