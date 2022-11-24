@@ -10,12 +10,6 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 
 ```{r echo = FALSE, warning = FALSE, message = FALSE}
 ### Cargo librerías
-install.packages("rmarkdown")        
-install.packages("distill")
-install.packages("googlesheets4")    
-install.packages("tidyverse")        
-install.packages("toastui")
-
 library(tidyverse)
 library(toastui)
 ```
