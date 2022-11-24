@@ -23,21 +23,6 @@ jobs:
 
       - uses: r-lib/actions/setup-renv@v2
       
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages("rmarkdown")'
-        
-      - name: Install distill
-        run: Rscript -e 'install.packages("distill")'
-        
-      - name: Install googlesheets4
-        run: Rscript -e 'install.packages("googlesheets4")'
-        
-      - name: Install tidyverse
-        run: Rscript -e 'install.packages("tidyverse")'
-        
-      - name: Install toastui
-        run: Rscript -e 'install.packages("toastui")'
-
       - name: Correr script calendar
         run: |
           Rscript ".github/source/check_calendar_items.R"
