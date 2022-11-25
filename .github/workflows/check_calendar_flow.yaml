@@ -13,23 +13,18 @@ jobs:
       GITHUB_PAT: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - uses: actions/checkout@v3
-      - uses: r-lib/actions/setup-r@v2
-      - uses: r-lib/actions/setup-pandoc@v2
       
-      - name: Install rmarkdown
-        run: Rscript -e 'install.packages("rmarkdown")'
-        
-      - name: Install distill
-        run: Rscript -e 'install.packages("distill")'
-        
-      - name: Install googlesheets4
-        run: Rscript -e 'install.packages("googlesheets4")'
-        
-      - name: Install tidyverse
-        run: Rscript -e 'install.packages("tidyverse")'
-        
-      - name: Install toastui
-        run: Rscript -e 'install.packages("toastui")'
+      - uses: r-lib/actions/setup-r@master
+
+      - uses: r-lib/actions/setup-pandoc@master
+
+      - name: Install dependencies
+        run: |
+          install.packages("rmarkdown")
+          install.packages("distill")
+          install.packages("googlesheets4")
+          install.packages("tidyverse")
+          install.packages("toastui")
 
       - name: Correr script calendar
         run: |
