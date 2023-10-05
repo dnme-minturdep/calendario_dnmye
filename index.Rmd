@@ -34,7 +34,8 @@ calendario <- base %>%
          end        = start,
          category   = "allday",
          calendarId = 123) %>% 
-  select(title, body, category, start, end, calendarId)
+  select(title, body, category, start, end, calendarId) %>% 
+  drop_na()
 
 ```
 
