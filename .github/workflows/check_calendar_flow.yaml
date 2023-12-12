@@ -31,7 +31,7 @@ jobs:
         run: Rscript -e 'install.packages("tidyverse")'
         
       - name: Install toastui
-        run: Rscript -e 'install.packages("toastui")'
+        run: Rscript -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/toastui/toastui_0.2.1.tar.gz", repos=NULL, type="source")'
 
       - name: Correr script calendar
         run: |
