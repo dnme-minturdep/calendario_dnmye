@@ -17,7 +17,7 @@ library(toastui)
 
 ```{r}
 
-#system("rm -r docs")
+system("rm -r docs/site_libs")
 ### Importar calendario fuente
 # Desactivo pedido de acceso
 googlesheets4::gs4_deauth()
