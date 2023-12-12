@@ -30,9 +30,9 @@ jobs:
       - name: Install tidyverse
         run: Rscript -e 'install.packages("tidyverse")'
         
-      - name: Install toastui
-        run: Rscript -e 'install.packages("https://cran.r-project.org/src/contrib/Archive/toastui/toastui_0.2.1.tar.gz", repos=NULL, type="source")'
-
+      - name: Install devtools
+        run: Rscript -e 'install.packages("devtools")'
+        
       - name: Correr script calendar
         run: |
           Rscript ".github/source/check_calendar_items.R"
