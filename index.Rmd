@@ -23,8 +23,10 @@ library(toastui)
 # Desactivo pedido de acceso
 googlesheets4::gs4_deauth()
 
+path <- Sys.getenv("CALENDAR_PATH")
+
 # Traigo base de calendario
-base <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit?usp=sharing")
+base <- googlesheets4::read_sheet(path)
 
 
 ### Limpieza de base

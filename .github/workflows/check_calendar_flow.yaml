@@ -34,6 +34,8 @@ jobs:
         run: Rscript -e 'install.packages("devtools")'
         
       - name: Correr script calendar
+        env:
+          CALENDAR_PATH: ${{ secrets.CALENDAR_PATH }}
         run: |
           Rscript ".github/source/check_calendar_items.R"
           

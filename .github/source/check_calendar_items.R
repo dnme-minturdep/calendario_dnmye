@@ -2,7 +2,9 @@ library(dplyr)
 
 googlesheets4::gs4_deauth()
 
-calendario_drive <- googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/11nyQ5QwuTUaS6F_g8ZM6Ta9SXnrOiCtPV3h2rG_LVV0/edit#gid=0") %>% 
+path <- Sys.getenv("CALENDAR_PATH")
+
+calendario_drive <- googlesheets4::read_sheet(path) %>% 
   filter(if_any(.cos = everything(), 
                 .fns = ~ !is.na(.))) %>% 
   nrow()
