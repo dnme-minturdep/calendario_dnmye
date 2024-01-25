@@ -1,6 +1,6 @@
 ---
 title: "Difusión de Publicaciones"
-description: "Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Desarrollo Estratégico del [Ministerio de Turismo y Deportes](http://turismo.gob.ar/ 'MINTURDEP')."
+description: "Se presenta aquí el conjunto de publicaciones que realiza la Dirección Nacional de Mercados y Estadística de la Subsecretaría de Turismo del [Ministerio del Interior](https://www.argentina.gob.ar/turismo)."
 site: distill::distill_website
 ---
 
