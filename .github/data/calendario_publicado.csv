@@ -1,0 +1,628 @@
+anio,mes,dia,titulo,descripcion
+2021,10,20,Publicación Bitácora: Te damos la bienvenida a la Bitácora de Turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/bienvenida/"">📖 BITÁCORA</a> </li>"
+2021,12,14,Publicación Bitácora: Empleo registrado en Turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2021-12-09-empleo/"">📖 BITÁCORA</a> </li>"
+2022,1,19,Encuesta de Ocupación Hotelera (EOH) - Noviembre 2021,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61e8604b64f75491116042.pdf"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,1,28,Publicación Bitácora: Actualización de microdatos de la Encuesta de Viajes y Turismo de los Hogares,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-01-25-actualizacin-de-base-de-microdatos-evyth/"">📖 BITÁCORA</a> </li>"
+2022,2,2,Cuenta satélite de turismo de la Argentina. Años 2004 y 2016-2019,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/61fad7e475abe809073943.pdf"">🔗 Informe</a></li><li><a href=""https://bitacora.yvera.tur.ar/posts/2022-02-01-cuenta-satelite/"">📖 BITÁCORA</a> </li>"
+2022,2,10,Estadísticas de turismo internacional (ETI) - Diciembre de 2021,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,2,23,Encuesta de ocupación hotelera (EOH) - Diciembre de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/621684925e880402249321.pdf"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,3,2,Reporte MULC - Enero de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,3,9,Estadísticas de turismo internacional (ETI) - Enero de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,3,11,Informe de visitas en Parques Nacionales - Octubre 2021,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/documentos/descarga/620adec0cdba2295888077.pdf"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2022,3,21,Encuesta de ocupación hotelera (EOH) - Enero de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,3,22,Publicación Bitácora: Calendario de Difusión,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-03-22-publicacin-del-calendario-de-difusin/"">📖 BITÁCORA</a> </li>"
+2022,3,29,Publicación Bitácora: Un recorrido por el Sistema de Información Turística de la Argentina.,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-03-29-tutorial-sinta/"">📖 BITÁCORA</a> </li>"
+2022,4,4,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - IV trimestre de 2021,"<li><a href=""https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>"
+2022,4,5,Reporte MULC - Febrero de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,4,5,Publicación Bitácora: Monitor Estadístico de las Provincias,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-04-04-monitor-provincias/"">📖 BITÁCORA</a> </li>"
+2022,4,12,Estadísticas de turismo internacional (ETI) - Febrero de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,4,13,Publicación Bitácora: Turismo de Naturaleza,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-04-12-turismo-naturaleza/"">📖 BITÁCORA</a> </li>"
+2022,4,26,Encuesta de ocupación hotelera (EOH) - Febrero de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,4,27,Publicación Bitácora: Turismo de Cultura,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-04-26-turismo-cultura/"">📖 BITÁCORA</a> </li>"
+2022,5,3,Reporte MULC - Marzo de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,5,10,Estadísticas de turismo internacional (ETI) - Marzo de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,5,11,Publicación Bitácora: Cuenta Satélite - Parte II,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-05-11-cst-parte2/"">📖 BITÁCORA</a> </li>"
+2022,5,18,Censo Nacional 2022,https://www.censo.gob.ar/
+2022,5,19,Publicación Bitácora: Microdatos EVyTH - Serie 2012-2021,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-05-16-evyth-serie-2012-2021/"">📖 BITÁCORA</a> </li>"
+2022,5,26,Encuesta de ocupación hotelera (EOH) - Marzo de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,5,26,Publicación Bitácora: Fuentes de datos: EOH,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-05-24-intro-eoh/"">📖 BITÁCORA</a> </li>"
+2022,5,31,Publicación Bitácora: Fuentes de datos: Turismo Internacional,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-05-31-intro-eti/"">📖 BITÁCORA</a> </li>"
+2022,6,2,Reporte MULC - Abril de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,6,7,Publicación Bitácora: Fuentes de datos: EVyTH,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-06-06-intro-evyth/"">📖 BITÁCORA</a> </li>"
+2022,6,8,Estadísticas de turismo internacional (ETI) - Abril de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,6,23,Encuesta de ocupación hotelera (EOH) - Abril de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,6,28,Publicación Bitácora: MapeAr,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-06-28-mapear/"">📖 BITÁCORA</a> </li>"
+2022,7,4,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - I trimestre de 2022,"<li><a href=""https://datos.yvera.gob.ar/dataset/encuesta-de-viajes-y-turismo-de-los-hogares-evyth-microdatos"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>"
+2022,7,4,Reporte MULC - Mayo de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,7,12,Estadísticas de turismo internacional (ETI) - Mayo de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,7,18,Publicación Bitácora: {herramientas} para el procesamiento de datos y {comunicacion} de la DNMyE,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-07-18-dnmye-paquetes/"">📖 BITÁCORA</a></li>"
+2022,7,21,Encuesta de ocupación hotelera (EOH) - Mayo de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,8,5,Publicación Bitácora: Biblioteca,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-08-05-biblioteca/"">📖 BITÁCORA</a></li>"
+2022,8,8,Publicación Bitácora: Agencias de Viajes y de Turismo Estudiantil,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-08-08-agencias/"">📖 BITÁCORA</a></li>"
+2022,8,16,Estadísticas de turismo internacional (ETI) - Junio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,8,19,Publicación Bitácora: Portal de Datos Abiertos,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-08-18-portal-de-datos-abiertos/"">📖 BITÁCORA</a> </li>"
+2022,8,25,Encuesta de ocupación hotelera (EOH) - Junio de 2022,"<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,8,25,Datos abiertos del Sistema Argentino de Calidad Turística (SACT),"<li><a href=""https://datos.yvera.gob.ar/dataset/organizaciones-distinguidas-sistema-argentino-calidad-turistica-sact/"">📖 DATOS ABIERTOS</a> </li>"
+2022,8,26,Publicación: Directrices de Gestión Ambiental,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-08-25-directrices-de-gestin-ambiental/"">📖 BITÁCORA</a> </li>"
+2022,8,29,Reporte: Empleo en Turismo - Mayo de 2022,"<li><a href=""https://tableros.yvera.tur.ar/empleo.html"">💻  Reporte</a> </li>"
+2022,9,8,Estadísticas de turismo internacional (ETI) - Julio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/turismo-internacional"">🔗 Informe</a></li>"
+2022,9,9,Publicación Bitácora: SintIa,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-09-08-sintia/"">📖 BITÁCORA</a> </li>"
+2022,9,12,Estadísticas de visitas en Parques Nacionales - Febrero 2022,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2022,9,20,Encuesta de ocupación hotelera (EOH) - Julio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,10,3,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - II trimestre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2022,10,12,Estadísticas de turismo internacional (ETI) - Agosto de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,10,24,Encuesta de ocupación hotelera (EOH) - Agosto de 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,10,21,Publicación Bitácora: El turismo de Argentina en LatinR,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-10-21-el-turismo-de-argentina-en-latinr/"">📖 BITÁCORA</a> </li>"
+2022,11,10,Estadísticas de turismo internacional (ETI) - Septiembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,11,23,Encuesta de ocupación hotelera (EOH) - Septiembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos></a></li>"
+2022,12,21,Estadísticas de turismo internacional (ETI) - Octubre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2022,12,21,Encuesta de ocupación hotelera (EOH) - Octubre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2022,8,2,Reporte MULC - Junio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,9,2,Reporte MULC - Julio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,10,4,Reporte MULC - Agosto de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,11,2,Reporte MULC - Septiembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,12,5,Reporte MULC - Octubre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2022,1,31,Informe Mensual de Estadísticas de Turismo (IMET) - enero de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,2,28,Informe Mensual de Estadísticas de Turismo (IMET) - febrero de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,3,31,Informe Mensual de Estadísticas de Turismo (IMET) - marzo de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,4,29,Informe Mensual de Estadísticas de Turismo (IMET) - abril de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,5,31,Informe Mensual de Estadísticas de Turismo (IMET) - mayo de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,6,30,Informe Mensual de Estadísticas de Turismo (IMET) - junio de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,7,29,Informe Mensual de Estadísticas de Turismo (IMET) - julio de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,8,31,Informe Mensual de Estadísticas de Turismo (IMET) - agosto de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,9,30,Informe Mensual de Estadísticas de Turismo (IMET) - septiembre de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,10,31,Informe Mensual de Estadísticas de Turismo (IMET) - octubre de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,12,2,Informe Mensual de Estadísticas de Turismo (IMET) - noviembre de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,6,15,Panorama Económico del Turismo en Argentina - mayo de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,7,15,Panorama Económico del Turismo en Argentina - junio de 2022,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,9,21,Publicación: Informe de cadena de valor del turismo,"<li><a href=""https://biblioteca.yvera.tur.ar/"">🔗 Informe</a></li>"
+2022,10,3,Reporte: Empleo en Turismo - Junio de 2022,"<li><a href=""https://tableros.yvera.tur.ar/empleo.html"">💻  Reporte</a> </li>"
+2022,10,28,Nuevo Tablero y Post Bitácora: Conectividad Aérea,"<li><a href=""https://tableros.yvera.tur.ar/conectividad"">👨🏻‍💻Tablero </a> </li>
+<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-10-28-datos-aerocomerciales/"">📖 BITÁCORA</a> </li>"
+2022,10,28,Estadísticas de visitas en Parques Nacionales - Marzo 2022,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2022,11,11,Publicación Bitácora: Novedades en la Encuesta de Turismo Internacional (ETI),"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-11-10-novedades-en-la-encuesta-de-turismo-internacional-eti/"">📖 BITÁCORA</a> </li>"
+2022,11,17,Estadísticas de visitas en Parques Nacionales - Abril 2022,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2022,11,22,Publicación Bitácora: Nueva versión del Monitor de provincias,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-11-19-nueva-version-del-monitor-de-provincias/"">📖 BITÁCORA</a> </li>"
+2022,11,29,"Publicación Bitácora: SintIA II, un bot como asistente interno","<li><a href=""https://bitacora.yvera.tur.ar/posts/2022-11-29-sintia-ii-un-bot-como-asistente-interno/"">📖 BITÁCORA</a> </li>"
+2022,12,12,Reporte: Empleo en Turismo - Agosto de 2022,"<li><a href=""https://tableros.yvera.tur.ar/empleo.html"">💻  Reporte</a> </li>"
+2022,12,16,Publicación: Documento de Trabajo N° 6: Estacionalidad en el turismo,"<li><a href=""https://biblioteca.yvera.tur.ar/"">🔗 Informe</a></li>"
+2023,2,1,Reporte MULC - diciembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,3,1,Reporte MULC - enero de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,4,3,Reporte MULC - febrero de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,5,2,Reporte MULC - marzo de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,6,1,Reporte MULC - abril de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,7,3,Reporte MULC - mayo de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,8,1,Reporte MULC - junio de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,9,1,Reporte MULC - julio de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,10,3,Reporte MULC - agosto de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,11,1,Reporte MULC - septiembre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,12,1,Reporte MULC - octubre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,1,31,Informe Mensual de Estadísticas de Turismo (IMET) - enero de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,2,28,Informe Mensual de Estadísticas de Turismo (IMET) - febrero de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,3,31,Informe Mensual de Estadísticas de Turismo (IMET) - marzo de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,4,28,Informe Mensual de Estadísticas de Turismo (IMET) - abril de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,5,31,Informe Mensual de Estadísticas de Turismo (IMET) - mayo de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,6,30,Informe Mensual de Estadísticas de Turismo (IMET) - junio de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,7,31,Informe Mensual de Estadísticas de Turismo (IMET) - julio de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,8,31,Informe Mensual de Estadísticas de Turismo (IMET) - agosto de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,9,29,Informe Mensual de Estadísticas de Turismo (IMET) - septiembre de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,10,31,Informe Mensual de Estadísticas de Turismo (IMET) - octubre de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,11,30,Informe Mensual de Estadísticas de Turismo (IMET) - noviembre de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2023,12,29,Informe Mensual de Estadísticas de Turismo (IMET) - diciembre de 2023,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2022,12,29,Reporte: Empleo en Turismo - septiembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/empleo.html"">💻  Reporte</a> </li>"
+2023,1,3,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,1,3,Reporte MULC - noviembre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2023,1,24,Encuesta de Ocupación Hotelera (EOH) - Noviembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,2,23,Encuesta de Ocupación Hotelera (EOH) - Diciembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,3,20,Encuesta de Ocupación Hotelera (EOH) - Enero 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,4,26,Encuesta de Ocupación Hotelera (EOH) - Febrero 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,5,23,Encuesta de Ocupación Hotelera (EOH) - Marzo 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,6,26,Encuesta de Ocupación Hotelera (EOH) - Abril 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,7,20,Encuesta de Ocupación Hotelera (EOH) - Mayo 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,8,23,Encuesta de Ocupación Hotelera (EOH) - Junio 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,9,21,Encuesta de Ocupación Hotelera (EOH) - Julio 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,10,24,Encuesta de Ocupación Hotelera (EOH) - Agosto 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,11,22,Encuesta de Ocupación Hotelera (EOH) - Septiembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,12,22,Encuesta de Ocupación Hotelera (EOH) - Octubre 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2023,1,10,Estadísticas de turismo internacional (ETI) - Noviembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,2,9,Estadísticas de turismo internacional (ETI) - Diciembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,3,7,Estadísticas de turismo internacional (ETI) - Enero 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,4,12,Estadísticas de turismo internacional (ETI) - Febrero 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,5,10,Estadísticas de turismo internacional (ETI) - Marzo 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,6,7,Estadísticas de turismo internacional (ETI) - Abril 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,7,12,Estadísticas de turismo internacional (ETI) - Mayo 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,8,8,Estadísticas de turismo internacional (ETI) - Junio 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,9,13,Estadísticas de turismo internacional (ETI) - Julio 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,10,11,Estadísticas de turismo internacional (ETI) - Agosto 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,11,9,Estadísticas de turismo internacional (ETI) - Septiembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,12,13,Estadísticas de turismo internacional (ETI) - Octubre 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2023,1,23,Publicación Bitácora: Mapa Interactivo para Inversiones Turísticas,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-01-19-mapa-interactivo-para-inversiones-tursticas/"">📖 Post Bitácora</a> </li>
+<li><a href=""https://inversionesturisticas.tur.ar/"">💻 Sitio web</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/inversiones/"">🗺️ Mapa interactivo</a> </li>"
+2023,1,24,Publicación Bitácora: Nueva versión del Tablero de Turismo Internacional,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-01-24-nueva-versin-del-tablero-de-turismo-internacional/"">📖 Post Bitácora</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">💻 Tablero</a></li>"
+2023,2,1,Publicación Bitácora: Encuesta a prestadores turísticos,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-02-01-encuesta-prestadores/"">📖 Post Bitácora</a> </li>"
+2023,2,13,Estadísticas de visitas en Parques Nacionales - Junio 2022,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,2,15,Publicación de datos abiertos: PREVIAJE,"<li><a href=""https://datos.yvera.gob.ar/dataset/previaje"">💻 Datos abiertos</a></li>
+<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-02-16-previaje_data_abierta/"">📖 Post Bitácora</a> </li>"
+2023,3,11,Publicación Bitácora: Nivel de Desarrollo Turístico de las localidades de Argentina,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-03-11-clasificacion-localidades/"">📖 Post Bitácora</a> </li>"
+2023,3,22,Publicación Bitácora: Crucerismo Marítimo en la Argentina,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-03-21-crucerismo/"">📖 Post Bitácora</a> </li>"
+2023,3,30,Publicación Bitácora: Turismo en Argentina Productiva 2030,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-03-29-turismo-ap2030/"">📖 Post Bitácora</a> </li>"
+2023,4,4,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - IV trimestre de 2022,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,4,4,Estadísticas de alojamiento: nueva actualización del PUNA,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-04-03-puna-actualizacin-de-indicadores-y-nuevos-lineamientos-de-trabajo/"">📄 Bitácora</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/recursos/biblioteca/dt10_puna.pdf"">🔗 Documento de trabajo</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/padron-unico-nacional-alojamiento"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/puna/"">💻 Tablero</a> </li>"
+2023,5,9,Crucerismo marítimo en argentina,"<li><a href=""https://tableros.yvera.tur.ar/crucerismo/"">💻 Tablero</a></li> 
+<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-05-08-tablerocrucerismo/"">📖 Post Bitácora</a></li>"
+2023,5,19,Publicación Bitácora: Puesta en marcha del Sistema Federal de Gestión de Datos Turísticos,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-05-19-datatur/"">📖 Post Bitácora</a> </li>"
+2023,5,23,Publicación Bitácora: Big data para el turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-05-22-big-data-para-el-turismo/"">📖 Post Bitácora</a> </li>"
+2023,5,29,Publicación: Documento de Trabajo N° 11: Conectividad Aérea,"<li><a href=""https://tableros.yvera.tur.ar/recursos/biblioteca/conectividad_aerea.pdf"">📖 Documento de Trabajo</a> </li>"
+2023,7,6,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - I trimestre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,10,6,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - II trimestre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,6,8,Reporte de Conectividad Aérea Mayo,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html"">✈️ Reporte de Conectividad Aérea</a> </li>"
+2023,6,8,Publicación Bitácora: Conectividad Aérea,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-05-31-conectividad-area/"">📖 Post Bitácora</a> </li>"
+2023,6,12,Publicación Bitácora: Lanzamiento de la Diplomatura en Generación y Análisis de Información en Turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-06-12-lanzamiento-de-la-diplomatura-en-generacin-y-anlisis-de-informacin-en-turismo/"">📖 Post Bitácora</a> </li>"
+2023,6,23,Publicación Bitácora: Publicación del Anuario Estadístico de Turismo 2021,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-06-23-anuario/"">📖 BITÁCORA</a> </li>"
+2023,6,26,Estadísticas de visitas en Parques Nacionales - Diciembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,7,5,Reporte de Conectividad Aérea Junio,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,8,7,Reporte de Conectividad Aérea Julio,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,9,7,Reporte de Conectividad Aérea Agosto,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,10,5,Reporte de Conectividad Aérea Septiembre,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,11,7,NA,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,12,6,Reporte de Conectividad Aérea Noviembre,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2023,8,3,Actualización Agencias de Viajes - marzo 2023,"<li><a href=""https://tableros.yvera.tur.ar/agencias/""> 💻Tablero de Agencias de Viajes</a> </li>"
+2023,8,17,Publicación Bitácora: El turismo en los ODS,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-08-17-ods-turismo/"">📖 BITÁCORA</a> </li>"
+2023,8,23,Publicación de datos abiertos: Conectividad aérea,"<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea""> 💻 Datos abiertos</a> </li>
+<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-08-23-datos-abiertos-de-conectividad-aerea/"">✈️ Post bitácora</a> </li>"
+2023,9,20,Actualización de datos abiertos: Previaje,"<li><a href=""https://datos.yvera.gob.ar/dataset/previaje""> 💻 Datos abiertos</a> </li>
+<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-09-20-actualizacion-data-abierta-pv4/"">📖 Post bitácora</a> </li>"
+2023,9,29,Actualización de informe y publicación de datos abiertos: Crucerismo Marítimo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-09-21-crucerismo-nuevo-posteo/"">📖 Post bitácora</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/recursos/biblioteca/informe_cruceros_22_23.pdf"">🔗  Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=movilidad""> 💻 Datos abiertos</a> </li>"
+2023,10,2,Actualización de datos: Padrón Único Nacional de Alojamiento 2022,"<li><a href=""https://datos.yvera.gob.ar/dataset/padron-unico-nacional-alojamiento""> 💻 Datos abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/puna"">📖 Tablero</a> </li>"
+2023,10,3,Publicación del Anuario Estadístico de Turismo 2022,"<li><a href=""https://tableros.yvera.tur.ar/recursos/biblioteca/anuario_2022.pdf"">📖 VERSIÓN PDF</a> </li>
+<li><a href=""https://dnme-minturdep.github.io/anuario_2022/"">💻 VERSIÓN ONLINE</a> </li>"
+2023,10,10,Reporte: Empleo en Turismo - junio de 2023,"<li><a href=""https://tableros.yvera.tur.ar/empleo.html"">💻  Reporte</a> </li>"
+2023,10,27,Publicacion de nuevos datos: Áreas Protegidas Provinciales,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-10-27-areas-protegidas/"">📖 Post bitácora</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗  Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza""> 💻 Datos abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html""> 👨🏻‍💻 Reporte</a> </li>"
+2023,11,14,"Cuenta satélite de turismo de la Argentina. Años 2019, 2020, 2021 y 2022","<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/cuenta-satelite-de-turismo"">🔗 Informe</a> </li>"
+2023,11,14,Publicacion de Actualización de la Cuenta Satélite de Turismo de Argentina 2022,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-11-14-cst-actualizacion-2022/"">📖 Post bitácora</a> </li>"
+2023,11,17,Publicación de nuevo tablero: Últimos Datos del Turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-11-16-tablero_ultimos_datos/"">📖 Post bitácora</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_ultimos_datos/""> 💻 Tablero</a> </li>"
+2023,11,27,Nuevo Documento de Trabajo: Índice Turístico de Localidades,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-11-27-indice-turistico/"">📖 Post bitácora</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/recursos/biblioteca/indice_turistico.pdf""> 🔗 Documento</a> </li>"
+2023,12,6,Publicación de un nuevo tablero: Índice Turístico de Localidades,"<li><a href=""https://tableros.yvera.tur.ar/indice_turistico/""> 🔗 Tablero</a> </li>"
+2023,12,7,Publicación de nuevos datos: Conectividad Terrestre Interurbana,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-12-07-conectividadterrestre/"">💻 Post Bitácora</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad_terrestre/"">🔗 Tablero</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-terrestre-interurbana"">📖 Datos Abiertos</a> </li>"
+2023,12,14,Publicación de Informes de Comportamiento Turístico 2021-2022,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-12-14-comportamiento/"">💻 Post Bitácora</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informes</a> </li>"
+2023,12,22,Publicación de un nuevo tablero: Visitas a Áreas Protegidas,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-12-21-tablero-areas-protegidas/"">💻 Post Bitácora</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas"">🔗 Tablero</a> </li>"
+2023,12,26,Actualización del Monitor de Turismo en las Provincias: año 2022,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-12-26-actualizacion-del-monitor-de-provincias/"">💻 Post Bitácora</a></li>
+<li><a href=""https://provincias.yvera.tur.ar/"">🔗 Sitio web</a> </li>"
+2024,1,31,Informe Mensual de Estadísticas de Turismo (IMET) - enero de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,2,29,Informe Mensual de Estadísticas de Turismo (IMET) - febrero de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,3,27,Informe Mensual de Estadísticas de Turismo (IMET) - marzo de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,4,30,Informe Mensual de Estadísticas de Turismo (IMET) - abril de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,5,31,Informe Mensual de Estadísticas de Turismo (IMET) - mayo de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,6,28,Informe Mensual de Estadísticas de Turismo (IMET) - junio de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,7,31,Informe Mensual de Estadísticas de Turismo (IMET) - julio de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,8,30,Informe Mensual de Estadísticas de Turismo (IMET) - agosto de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,9,30,Informe Mensual de Estadísticas de Turismo (IMET) - septiembre de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,10,31,Informe Mensual de Estadísticas de Turismo (IMET) - octubre de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,11,29,Informe Mensual de Estadísticas de Turismo (IMET) - noviembre de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,12,30,Informe Mensual de Estadísticas de Turismo (IMET) - diciembre de 2024,"<li><a href=""https://biblioteca.yvera.tur.ar/coyuntura.html"">🔗 Informe</a></li>"
+2024,1,2,Reporte MULC - noviembre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,2,1,Reporte MULC - diciembre de 2023,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,3,1,Reporte MULC - enero de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,5,2,Reporte MULC - marzo de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,6,3,Reporte MULC - abril de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,7,1,Reporte MULC - mayo de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,8,1,Reporte MULC - junio de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,9,2,Reporte MULC - julio de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,10,1,Reporte MULC - agosto de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,11,1,Reporte MULC - septiembre de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,12,2,Reporte MULC - octubre de 2024,"<li><a href=""https://tableros.yvera.tur.ar/mulc.html"">💻 Reporte</a></li>"
+2024,1,8,Reporte de Conectividad Aérea Diciembre,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2024,3,19,Reporte de Conectividad Aérea Febrero,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2024,4,12,Reporte de Conectividad Aérea Marzo,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2024,5,14,Reporte de Conectividad Aérea Abril,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2024,7,24,Datos de Conectividad Aérea junio 2024,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
+2024,1,23,Encuesta de Ocupación Hotelera (EOH) - Noviembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,2,22,Encuesta de Ocupación Hotelera (EOH) - Diciembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,3,22,Encuesta de Ocupación Hotelera (EOH) - Enero 2024,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,4,25,Encuesta de Ocupación Hotelera (EOH) - Febrero 2024,"<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,5,22,Encuesta de Ocupación Hotelera (EOH) - Marzo 2024 Nuevo tablero disponible en el SINTA,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2024-03-26-tablero-eoh/"">📖 Post Bitácora</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,6,25,Encuesta de Ocupación Hotelera (EOH) - Abril 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,7,23,Encuesta de Ocupación Hotelera (EOH) - Mayo 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,8,21,Encuesta de Ocupación Hotelera (EOH) - Junio 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,9,20,Encuesta de Ocupación Hotelera (EOH) - Julio 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,10,21,Encuesta de Ocupación Hotelera (EOH) - Agosto 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,11,21,Encuesta de Ocupación Hotelera (EOH) - Septiembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,12,19,Encuesta de Ocupación Hotelera (EOH) - Octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,1,21,Encuesta de Ocupación Hotelera (EOH) - Noviembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,2,19,Encuesta de Ocupación Hotelera (EOH) - Diciembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,3,20,Encuesta de Ocupación Hotelera (EOH) - Enero 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,4,22,Encuesta de Ocupación Hotelera (EOH) - Febrero 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,5,20,Encuesta de Ocupación Hotelera (EOH) - Marzo 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,6,19,Encuesta de Ocupación Hotelera (EOH) - Abril 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2024,1,9,Estadísticas de turismo internacional (ETI) - Noviembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,2,7,Estadísticas de turismo internacional (ETI) - Diciembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,3,5,Estadísticas de turismo internacional (ETI) - Enero 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,4,10,Estadísticas de turismo internacional (ETI) - Febrero 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,5,9,Estadísticas de turismo internacional (ETI) - Marzo 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,6,11,Estadísticas de turismo internacional (ETI) - Abril 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,7,12,Estadísticas de turismo internacional (ETI) - Mayo 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,8,8,Estadísticas de turismo internacional (ETI) - Junio 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,8,26,Estadísticas de turismo internacional (ETI) - Julio 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,9,26,Estadísticas de turismo internacional (ETI) - Agosto 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,10,25,Estadísticas de turismo internacional (ETI) - Septiembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,11,25,Estadísticas de turismo internacional (ETI) - Octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,12,23,Estadísticas de turismo internacional (ETI) - Noviembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,1,27,Estadísticas de turismo internacional (ETI) - Diciembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,2,25,Estadísticas de turismo internacional (ETI) - Enero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,3,25,Estadísticas de turismo internacional (ETI) - Febrero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,4,25,Estadísticas de turismo internacional (ETI) - Marzo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,5,26,Estadísticas de turismo internacional (ETI) - Abril 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,6,25,Estadísticas de turismo internacional (ETI) - Mayo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2024,11,14,"Cuenta satélite de turismo de la Argentina. Años 2021, 2022 y 2023","<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/cuenta-satelite-de-turismo"">🔗 Informe</a> </li>"
+2024,11,14,Publicacion de Actualización de la Cuenta Satélite de Turismo de Argentina 2023,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2023-11-14-cst-actualizacion-2023/"">📖 Post bitácora</a> </li>"
+2023,10,9,Estadisticas de visitas en Áreas Protegidas - Febrero 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,3,Estadisticas de visitas en Áreas Protegidas - Marzo 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,17,Estadisticas de visitas en Áreas Protegidas - Abril 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,23,Estadisticas de visitas en Áreas Protegidas - Mayo 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,23,Estadisticas de visitas en Áreas Protegidas - Junio 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,30,Estadisticas de visitas en Áreas Protegidas - Julio 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,11,30,Estadisticas de visitas en Áreas Protegidas - Agosto 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,12,11,Estadisticas de visitas en Áreas Protegidas - Septiembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2023,12,11,Estadisticas de visitas en Áreas Protegidas - Octubre 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2024,1,19,Estadisticas de visitas en Áreas Protegidas - Noviembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,1,26,Estadisticas de visitas en Áreas Protegidas - Diciembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,2,26,Estadisticas de visitas en Áreas Protegidas - Enero 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,3,18,Estadisticas de visitas en Áreas Protegidas - Febrero 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,4,26,Estadisticas de visitas en Áreas Protegidas - Marzo 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,6,5,Estadisticas de visitas en Áreas Protegidas - Abril 2024,"<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,7,8,Estadisticas de visitas en Áreas Protegidas - Mayo 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,8,2,Estadisticas de visitas en Áreas Protegidas - Junio 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,9,6,Estadisticas de visitas en Áreas Protegidas - Julio 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,9,26,Estadisticas de visitas en Áreas Protegidas - Agosto 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,10,25,Estadisticas de visitas en Áreas Protegidas - Septiembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,11,25,Estadisticas de visitas en Áreas Protegidas - Octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2024,7,19,Padrón Único Nacional de Alojamiento (PUNA) - Año 2023,"<li><a href=""http://datos.yvera.gob.ar/dataset/padron-unico-nacional-alojamiento"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/puna/"">💻 Tablero</a> </li>"
+2023,2,28,Estadísticas de visitas en Parques Nacionales - Julio 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,6,21,Estadísticas de visitas en Parques Nacionales - Agosto 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,6,21,Estadísticas de visitas en Parques Nacionales - Septiembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,6,21,Estadísticas de visitas en Parques Nacionales - Octubre 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,6,21,Estadísticas de visitas en Parques Nacionales - Noviembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,6,21,Estadísticas de visitas en Parques Nacionales - Diciembre 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,8,16,Estadísticas de visitas en Parques Nacionales - Enero 2023,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,2,13,Estadísticas de visitas en Parques Nacionales - Mayo 2022,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
+2023,12,12,Informe Anual - EVyTH 2022,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,12,12,Informe Anual - EVyTH 2021,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2023,12,12,Informe Anual - EVyTH 2020,"<li><a href=""https://tableros.yvera.tur.ar/interno.html"">💻 Reportes</a> </li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-interno"">📖 Datos Abiertos</a> </li>"
+2024,12,26,Estadisticas de visitas en Áreas Protegidas - Noviembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
+<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/parques-nacionales"">🔗 Informe</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset/parques-nacionales"">📖 Datos Abiertos</a> </li>"
+2024,2,27,Actualización de datos: Conectividad Terrestre Interurbana - Enero 2024,"<li><a href=""https://tableros.yvera.tur.ar/conectividad_terrestre/"">🔗 Tablero</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-terrestre-interurbana"">📖 Datos Abiertos</a> </li>"
+2024,3,15,Publicación de nuevos datos de conectividad interurbana terrestre: Servicios de Turismo,"<li><a href=""https://bitacora.yvera.tur.ar/posts/2024-03-15-dut-cnrt/"">💻 Post Bitácora</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad_terrestre/"">🔗 Tablero</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-terrestre-interurbana"">📖 Datos Abiertos</a> </li>"
+2024,8,2,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2023,"<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>"
