@@ -571,7 +571,7 @@ anio,mes,dia,titulo,descripcion
 <li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
 <li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
 <li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
-2024,11,25,Estadisticas de visitas en Áreas Protegidas - Octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
+2024,11,28,Estadisticas de visitas en Áreas Protegidas - Octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/areas_protegidas.html"">💻 Reporte</a></li>
 <li><a href=""https://www.yvera.tur.ar/sinta/informe/info/areas-protegidas"">🔗 Informe</a> </li>
 <li><a href=""https://datos.yvera.gob.ar/dataset?groups=turismo-naturaleza"">📖 Datos Abiertos</a> </li>
 <li><a href=""https://tableros.yvera.tur.ar/tablero_areas_protegidas/"">💻 Tablero</a> </li>"
@@ -627,3 +627,6 @@ anio,mes,dia,titulo,descripcion
 <li><a href=""https://tableros.yvera.tur.ar/conectividad_terrestre/"">🔗 Tablero</a> </li>
 <li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-terrestre-interurbana"">📖 Datos Abiertos</a> </li>"
 2024,8,2,Encuesta de Viajes y Turismo de los Hogares (EVyTH) - III trimestre de 2023,"<li><a href=""https://www.yvera.tur.ar/sinta/informe/info/encuesta-de-viajes-y-turismo-de-los-hogares-evyth"">🔗 Informe</a></li>"
+2024,11,15,Datos de Conectividad Aérea octubre 2024,"<li><a href=""https://tableros.yvera.tur.ar/conectividad.html""> 💻 Reporte de Conectividad Aérea</a> </li>
+<li><a href=""https://datos.yvera.gob.ar/dataset/conectividad-aerea"">📖 Datos Abiertos</a> </li>
+<li><a href=""https://tableros.yvera.tur.ar/conectividad/"">✈️ Tablero de Conectividad Aérea</a> </li>"
