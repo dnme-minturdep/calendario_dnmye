@@ -31,5 +31,5 @@ navbar:
     
 output:
   distill::distill_article:
-    css: /srv/shiny-server/recursos/dnmye/styles.css
+    css: https://tableros.yvera.tur.ar/recursos/dnmye/styles.css
 
