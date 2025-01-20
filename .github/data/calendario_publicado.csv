@@ -444,6 +444,30 @@ anio,mes,dia,titulo,descripcion
 <li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
 <li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
 <li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,7,21,Encuesta de Ocupación Hotelera (EOH) - Mayo 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,8,20,Encuesta de Ocupación Hotelera (EOH) - Junio 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,9,19,Encuesta de Ocupación Hotelera (EOH) - Julio 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,10,21,Encuesta de Ocupación Hotelera (EOH) - Agosto 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,11,19,Encuesta de Ocupación Hotelera (EOH) - Septiembre 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
+2025,12,19,Encuesta de Ocupación Hotelera (EOH) - Octubre 2025,"<li><a href=""https://tableros.yvera.tur.ar/tablero_eoh"">💻 Tablero</a></li> 
+<li><a href=""https://tableros.yvera.tur.ar/eoh.html"">💻 Reporte</a></li> 
+<li><a href=""https://www.yvera.tur.ar/estadistica/informe/info/encuesta-de-ocupacion-hotelera-eoh"">🔗 Informe</a></li> 
+<li><a href=""https://datos.yvera.gob.ar/dataset?groups=sector-hotelero"">📖 Datos Abiertos</a></li>"
 2024,1,9,Estadísticas de turismo internacional (ETI) - Noviembre 2023,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
@@ -483,22 +507,40 @@ anio,mes,dia,titulo,descripcion
 2024,12,23,Estadísticas de turismo internacional (ETI) - Noviembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,1,27,Estadísticas de turismo internacional (ETI) - Diciembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,1,27,Estadísticas de turismo internacional (ETI) - Diciembre 2024,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,2,25,Estadísticas de turismo internacional (ETI) - Enero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,2,25,Estadísticas de turismo internacional (ETI) - Enero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,3,25,Estadísticas de turismo internacional (ETI) - Febrero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,3,25,Estadísticas de turismo internacional (ETI) - Febrero 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,4,25,Estadísticas de turismo internacional (ETI) - Marzo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,4,25,Estadísticas de turismo internacional (ETI) - Marzo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,5,26,Estadísticas de turismo internacional (ETI) - Abril 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,5,26,Estadísticas de turismo internacional (ETI) - Abril 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
-2024,6,25,Estadísticas de turismo internacional (ETI) - Mayo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+2025,6,25,Estadísticas de turismo internacional (ETI) - Mayo 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,7,25,Estadísticas de turismo internacional (ETI) - Junio 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,8,26,Estadísticas de turismo internacional (ETI) - Julio 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,9,25,Estadísticas de turismo internacional (ETI) - Agosto 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,10,27,Estadísticas de turismo internacional (ETI) - Septiembre 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,11,27,Estadísticas de turismo internacional (ETI) - Octubre 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
+<li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
+<li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
+2025,12,23,Estadísticas de turismo internacional (ETI) - Noviembre 2025,"<li><a href=""https://tableros.yvera.tur.ar/internacional.html"">💻 Reporte</a></li>
 <li><a href=""https://tableros.yvera.tur.ar/turismo_internacional/"">👨🏻‍💻 Tablero</a> </li>
 <li><a href=""http://datos.yvera.gob.ar/dataset?groups=turismo-internacional"">📖 Datos Abiertos</a> </li>"
 2023,10,9,Estadisticas de visitas en Áreas Protegidas - Febrero 2023,"<li><a href=""https://tableros.yvera.tur.ar/parques_nacionales.html"">💻 Reporte</a></li>
